@@ -1,6 +1,6 @@
 # Smart in the Dark — a Serious Game for Arduino 
 
-**Smart in the Dark** is a educational serious game built using **GDevelop** and **BlocklyDuino**. It simulates Arduino-based challenges through narrative-driven levels, with an embedded block-based code editor that validates logic and enhances learning.
+**Smart in the Dark** is an educational serious game built using **GDevelop** and **BlocklyDuino**. It simulates Arduino-based challenges through narrative-driven levels, with an embedded block-based code editor that validates logic and enhances learning.
 
 ---
 
