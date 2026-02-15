@@ -34,8 +34,6 @@
 
 This term clearly conveys that you are measuring the amount of time each player spends to complete a given level. It’s widely understood in game analytics and serious games research.
 
-You can also define it briefly, for example:
-
 “Level Completion Time is defined as the total time (in seconds ) that a player spends to complete a specific level in the game, as recorded via Firebase.”
 - Firebase Authentication can be added to support:
   - User login (email/Google)
