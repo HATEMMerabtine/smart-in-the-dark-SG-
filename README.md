@@ -41,7 +41,19 @@ You can also define it briefly, for example:
   - User login (email/Google)
 - Firebase Firestore/Realtime DB can be configured from inside GDevelop ([GDevelop Firebase Docs](https://wiki.gdevelop.io/gdevelop5/all-features/firebase/quickstart/))
 
-### 4. JavaScript Bridge (Inter-Component Messaging)
+### 4. Data Logging & Analytics (Sample Data)
+
+To facilitate pedagogical research and player behavior analysis, the game exports interaction data to Firebase. A sample of this logged data is available in the repository as `ingame.json`.
+
+**The log file includes:**
+* **Session Metadata:** Timestamps and User IDs via Firebase Auth.
+* **Performance Metrics:** Level Completion Time, defined as the total time in seconds that a player spends to complete a specific level.
+* **Behavioral Data:** `clickCount` representing the total number of interface interactions recorded via the JavaScript bridge.
+* **Logic Validation:** The final `blocklyCode` string submitted by the player for validation.
+
+> **Note:** The `ingame.json` file serves as a reference for the Firestore schema used to evaluate learning curves and engagement levels in **Smart in the Dark**.
+
+### 5. JavaScript Bridge (Inter-Component Messaging)
 
 - GDevelop uses `window.addEventListener('message', handler)` to receive:
   - `blocklyCode` — the generated Arduino code string
@@ -223,7 +235,6 @@ After success, guide the player to a result/reflection scene:
 - Recap the problem and how the code fixed it
 - Provide feedback and motivation
 ---
-
 
 5. **Export as HTML5**  
    - Go to **File > Export > Web (HTML5)**  
