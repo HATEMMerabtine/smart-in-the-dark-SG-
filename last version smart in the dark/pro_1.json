@@ -1,9 +1,9 @@
 {
   "firstLayout": "choose",
   "gdVersion": {
-    "build": 239,
+    "build": 274,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -18,6 +18,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "",
+    "useDeprecatedZeroAsDefaultStringVariable": true,
     "version": "1.0.0",
     "name": "smart int the dark v6",
     "description": "",
@@ -85,7 +86,7 @@
       {
         "extension": "Firebase",
         "property": "FirebaseConfig",
-        "value": ""
+        "value": "{\n  \"apiKey\": \"AIzaSyB0W5LC7dx6ZiOWjVz0x-9y1dZjms1He1I\",\n  \"authDomain\": \"light-in-the-dark-315c3.firebaseapp.com\",\n  \"projectId\": \"light-in-the-dark-315c3\",\n  \"storageBucket\": \"light-in-the-dark-315c3.firebasestorage.app\",\n  \"messagingSenderId\": \"936577074706\",\n  \"appId\": \"1:936577074706:web:bbe0a160d7e59e1e59bacb\",\n  \"measurementId\": \"G-X92MQGY815\"\n}\n"
       }
     ],
     "platforms": [
@@ -2677,8 +2678,7 @@
         "smoothed": true,
         "userAdded": false
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [
     {
@@ -3598,13 +3598,17 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5117784035210173,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [],
@@ -3687,7 +3691,7 @@
           "width": 0,
           "x": 116,
           "y": 29,
-          "zOrder": 4,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3703,7 +3707,7 @@
           "width": 0,
           "x": 604,
           "y": 199,
-          "zOrder": 5,
+          "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3886,6 +3890,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "menu_screen",
+          "persistentUuid": "78ceb090-afb4-4642-b1a9-dc842aec2156",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3990,6 +3995,7 @@
           "bold": false,
           "italic": false,
           "name": "PreQuest",
+          "persistentUuid": "832d3892-638a-45d2-b06f-28ca9cb697ee",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -4033,6 +4039,7 @@
           "bold": true,
           "italic": false,
           "name": "Step1",
+          "persistentUuid": "f0fd164a-c4f0-4256-a1f4-53dd1646677b",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -4223,6 +4230,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4256,6 +4264,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4290,6 +4299,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4337,6 +4347,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -5487,6 +5498,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -6526,6 +6538,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -7437,6 +7450,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -7481,6 +7495,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -7565,13 +7580,17 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.43357743047023733,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [],
@@ -8508,6 +8527,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -9316,6 +9336,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11427,6 +11448,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11471,6 +11493,7 @@
           "ambientLightColorB": 128,
           "ambientLightColorG": 128,
           "ambientLightColorR": 128,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11488,6 +11511,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11521,6 +11545,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11887,6 +11912,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -11974,48 +12000,59 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5843784410740955,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "BlocklyCode1",
+          "persistentUuid": "34a85cba-7e95-4755-a986-4df5f6895af4",
           "type": "string",
           "value": ""
         },
         {
           "name": "correct",
+          "persistentUuid": "b26a300a-0bca-4225-9bc5-b37d21ff3036",
           "type": "string",
           "value": "voidsetup(){pinMode(13,OUTPUT);}voidloop(){digitalWrite(13,HIGH);}"
         },
         {
           "name": "ClickCount1",
+          "persistentUuid": "81662a7b-e2d1-4145-8920-a8e0dfce6c31",
           "type": "number",
           "value": 0
         },
         {
           "name": "tspend",
+          "persistentUuid": "b361af99-1bd8-4463-96a8-3115fdfc52ca",
           "type": "number",
           "value": 0
         },
         {
           "name": "error",
+          "persistentUuid": "aa8ea2cd-10da-4c85-aaac-755ddcf5937b",
           "type": "string",
           "value": ""
         },
         {
           "name": "timerError",
+          "persistentUuid": "846e16a7-af1a-4aa5-be07-ea9e1ae84b44",
           "type": "string",
           "value": ""
         },
         {
           "name": "WrongAttempts",
+          "persistentUuid": "bea8a76d-37fe-4baf-9e26-8593dbea8661",
           "type": "number",
           "value": 0
         }
@@ -12131,7 +12168,7 @@
                 "if (!document.getElementById(\"myIframe\")) {",
                 "  const iframe = document.createElement(\"iframe\");",
                 "  iframe.id = \"myIframe\";",
-                "  iframe.src = \"https://blocklyduino-smart-in-the-dark-sg.netlify.app/level/1\"; ",
+                "  iframe.src = \"https://blocklyduino-sitd.netlify.app/level/?level=1\"; ",
                 "  iframe.style.position = \"absolute\";",
                 "  iframe.style.width = \"100%\";",
                 "  iframe.style.height = \"100%\"; ",
@@ -12414,6 +12451,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -12458,6 +12496,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -12530,83 +12569,101 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5653158055126425,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "isConnecting_",
+          "persistentUuid": "7754e79c-c0f4-43ea-b4a3-0ad769120da2",
           "type": "boolean",
           "value": false
         },
         {
           "name": "startX",
+          "persistentUuid": "c676b6fd-0ecf-4d44-890b-a39cd68c31bb",
           "type": "number",
           "value": 0
         },
         {
           "name": "startY",
+          "persistentUuid": "cf42bb18-5652-4fbd-9fff-a4da6bcaefb0",
           "type": "number",
           "value": 0
         },
         {
           "name": "done_1",
+          "persistentUuid": "d5ffe66c-53fa-4d12-bda7-f4cabf1c9c03",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done_2",
+          "persistentUuid": "a0d769b0-bc59-4f13-858a-3c732f974b6f",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done_3",
+          "persistentUuid": "08e58259-ed5b-4cf4-840f-6344aa549cf5",
           "type": "boolean",
           "value": false
         },
         {
           "name": "led",
+          "persistentUuid": "5d71f552-7628-45fc-93bd-dfcb9e9aff58",
           "type": "boolean",
           "value": false
         },
         {
           "name": "res",
+          "persistentUuid": "311dd2b9-a22c-4b68-b1d8-2b2886d40cdf",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_1",
+          "persistentUuid": "76ceda90-9efe-4bf8-bad0-a0a2fb827841",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_2",
+          "persistentUuid": "e94afdba-26d7-4602-9e5d-9302fb264988",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_3",
+          "persistentUuid": "37aa0385-dc2b-4285-a1b0-e44891d53363",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_4",
+          "persistentUuid": "dd5652fd-79ba-44c9-8f00-bb45bf63c305",
           "type": "boolean",
           "value": false
         },
         {
           "name": "complete",
+          "persistentUuid": "25607cde-f1bf-47ea-a4c4-e0b8a58b1f5e",
           "type": "boolean",
           "value": false
         },
         {
           "name": "ClickCount",
+          "persistentUuid": "291dc722-576a-45c6-8dee-e68de97545f0",
           "type": "number",
           "value": 0
         }
@@ -15571,6 +15628,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -15604,6 +15662,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -16295,6 +16354,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -16339,6 +16399,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -16934,6 +16995,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -17021,83 +17083,101 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.6455105703311486,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "txt_1",
+          "persistentUuid": "193b40b2-6ffb-4294-9033-fff4d6c7923e",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_2",
+          "persistentUuid": "cc72271b-8ae3-48b9-b5b5-ee8e7ef9eb60",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_3",
+          "persistentUuid": "3c2f133b-d8ba-4464-996a-1aa01332a9ca",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_4",
+          "persistentUuid": "ce72a00d-d60d-436f-9d09-fc07afaf87dd",
           "type": "boolean",
           "value": false
         },
         {
           "name": "timerError",
+          "persistentUuid": "9bf38900-1112-4dff-8bf0-f1b13f1ffc5d",
           "type": "string",
           "value": ""
         },
         {
           "name": "erro",
+          "persistentUuid": "109314c8-fe95-4416-ba1b-d196eec8095d",
           "type": "string",
           "value": ""
         },
         {
           "name": "ClickCount2",
+          "persistentUuid": "e965f312-328e-4902-bb9b-0ccdcf9ed5aa",
           "type": "number",
           "value": 0
         },
         {
           "name": "tspend",
+          "persistentUuid": "ac62b45f-98d7-47d3-ac20-2ecf4202e68a",
           "type": "number",
           "value": 0
         },
         {
           "name": "error",
+          "persistentUuid": "c46247dc-299f-43d7-a879-9934a1ec0fdc",
           "type": "string",
           "value": "0"
         },
         {
           "name": "BlocklyCode2",
+          "persistentUuid": "a30ff2aa-6db8-4c09-a83e-50bec2474237",
           "type": "string",
           "value": ""
         },
         {
           "name": "validCode",
+          "persistentUuid": "bc505dba-67cc-47db-8a9f-f537952ba45a",
           "type": "boolean",
           "value": false
         },
         {
           "name": "correct",
+          "persistentUuid": "5cc68edf-58df-4817-bf6c-2b652f63eab7",
           "type": "string",
-          "value": "intsensor_value;inttemp;voidsetup(){pinMode(9,OUTPUT);}voidloop(){sensor_value=analogRead(A0);temp=30;if(sensor_value>temp){digitalWrite(9,HIGH);}else{digitalWrite(9,LOW);}}"
+          "value": "intsensor_value,temp;voidsetup(){pinMode(9,OUTPUT);}voidloop(){sensor_value=analogRead(A0);temp=30;if(sensor_value>temp){digitalWrite(9,HIGH);}else{digitalWrite(9,LOW);}}"
         },
         {
           "name": "txt_0",
+          "persistentUuid": "35533703-7080-4deb-82e9-89134e83a411",
           "type": "boolean",
           "value": false
         },
         {
           "name": "WrongAttempts",
+          "persistentUuid": "f7266e4b-4560-4abc-88c6-743b96ad851b",
           "type": "number",
           "value": 0
         }
@@ -17149,7 +17229,7 @@
                 "if (!document.getElementById(\"myIframe\")) {",
                 "  const iframe = document.createElement(\"iframe\");",
                 "  iframe.id = \"myIframe\";",
-                "  iframe.src = \"https://blocklyduino-smart-in-the-dark-sg.netlify.app/level/2\"; ",
+                "  iframe.src = \"https://blocklyduino-sitd.netlify.app/level/?level=2\"; ",
                 "  iframe.style.position = \"absolute\";",
                 "  iframe.style.width = \"100%\";",
                 "  iframe.style.height = \"100%\"; ",
@@ -17416,6 +17496,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -17460,6 +17541,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -17532,148 +17614,179 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5653158055126384,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "isConnecting_",
+          "persistentUuid": "7d9f2948-f294-4824-94aa-8e34d8fb3e65",
           "type": "boolean",
           "value": false
         },
         {
           "name": "startX",
+          "persistentUuid": "bbf764fb-991f-48b2-8c6e-7486e1d69f06",
           "type": "number",
           "value": 0
         },
         {
           "name": "startY",
+          "persistentUuid": "7eb41782-b130-4e40-9066-2d353ec870c5",
           "type": "number",
           "value": 0
         },
         {
           "name": "done1",
+          "persistentUuid": "4f0ea6f3-8049-4cf5-9de0-6906f0b87bf8",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done2",
+          "persistentUuid": "e4e72853-23a0-48e4-a41a-99830de5798a",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done3",
+          "persistentUuid": "5a80d836-4260-4434-977b-ae1488785205",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done4",
+          "persistentUuid": "ce647617-8fb1-447a-bf99-9b649e848b22",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done5",
+          "persistentUuid": "8644e3c9-2793-45cd-bf76-aebade3ee9d5",
           "type": "boolean",
           "value": false
         },
         {
           "name": "pos",
+          "persistentUuid": "3a1bac65-acee-416e-9ae1-d6aa7a42fc40",
           "type": "boolean",
           "value": false
         },
         {
           "name": "Sda",
+          "persistentUuid": "9d31d547-d6b9-440e-a2d2-5b2ac8fe0304",
           "type": "boolean",
           "value": false
         },
         {
           "name": "Gnd",
+          "persistentUuid": "60594cd1-f062-4f01-a431-e280d38efef7",
           "type": "boolean",
           "value": false
         },
         {
           "name": "Res2",
+          "persistentUuid": "754cda8b-6aea-4311-a8af-6cc6affaf174",
           "type": "boolean",
           "value": false
         },
         {
           "name": "connected1",
+          "persistentUuid": "ccde9bcc-659f-4fff-9864-24e2d06cc395",
           "type": "boolean",
           "value": false
         },
         {
           "name": "connected2",
+          "persistentUuid": "957ae26f-57c5-44e6-b221-a5c0c6ffeee6",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done6",
+          "persistentUuid": "44303186-4ff8-400d-acc5-4a5f562fa13c",
           "type": "boolean",
           "value": false
         },
         {
           "name": "emettor",
+          "persistentUuid": "4c337c14-ee4f-46b5-911c-dc0badff674b",
           "type": "boolean",
           "value": false
         },
         {
           "name": "base",
+          "persistentUuid": "90ae5eac-494c-40b4-af01-ab9ccd32e89c",
           "type": "boolean",
           "value": false
         },
         {
           "name": "neg",
+          "persistentUuid": "2d9c1f4c-a1cb-4478-a713-57d3be314c7a",
           "type": "boolean",
           "value": false
         },
         {
           "name": "Vcc",
+          "persistentUuid": "527a86d1-7aab-4ec1-88e4-d67bc1a42362",
           "type": "boolean",
           "value": false
         },
         {
           "name": "done7",
+          "persistentUuid": "9665f6ce-5ed2-4f27-a022-b76ca7817051",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_1",
+          "persistentUuid": "d2495170-749c-496f-9824-870fa57e1367",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_2",
+          "persistentUuid": "01036ac9-73e9-4fde-8d81-8cb7dd691000",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_3",
+          "persistentUuid": "6d62a36d-db88-43af-8ca8-d8a301694d6e",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_4",
+          "persistentUuid": "42aab202-49f6-4971-9ffc-47a4ba8ad269",
           "type": "boolean",
           "value": false
         },
         {
           "name": "complete",
+          "persistentUuid": "5aed2bde-dbb4-483c-98e1-eecf57fc1efc",
           "type": "boolean",
           "value": false
         },
         {
           "name": "ClickCount",
+          "persistentUuid": "52395831-2300-45af-9934-6c15e7a10406",
           "type": "number",
           "value": 0
         },
         {
           "name": "error",
+          "persistentUuid": "d8280eb4-1f8f-461a-915a-c36908bc255d",
           "type": "string",
           "value": ""
         }
@@ -23940,6 +24053,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -24649,6 +24763,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -25292,6 +25407,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -25379,83 +25495,101 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5671857898580477,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "txt_1",
+          "persistentUuid": "45534011-029b-4b54-ada0-5cc75d5dc1fc",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_2",
+          "persistentUuid": "1f598fd7-37c2-4f33-b4af-54bc3223b6f2",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_3",
+          "persistentUuid": "0757ef28-e09d-41a6-a268-ba3e192bb033",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_4",
+          "persistentUuid": "ea8aefdf-99b4-437b-b975-1851aea4811b",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_5",
+          "persistentUuid": "600d730a-2510-4fe3-9cec-aa83ec770827",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_6",
+          "persistentUuid": "b70bb398-4aa4-4ed0-a7d4-00e49cd86e63",
           "type": "boolean",
           "value": false
         },
         {
           "name": "BlocklyCode3",
+          "persistentUuid": "5bdb2d32-3221-46da-835b-c5a2f37c6038",
           "type": "string",
           "value": "0"
         },
         {
           "name": "correct",
+          "persistentUuid": "ca2930b2-23bf-42dc-bd94-f9fa561070da",
           "type": "string",
           "value": "#include<Servo.h>intpir_value;Servoservo_6;voidsetup(){pinMode(2,INPUT);servo_6.attach(6);pinMode(12,OUTPUT);}voidloop(){pir_value=digitalRead(2);if(pir_value==HIGH){servo_6.write(90);}else{servo_6.write(0);}digitalWrite(12,HIGH);}"
         },
         {
           "name": "timerError",
+          "persistentUuid": "a165c1fa-2f2d-4a1a-900f-a8943c19123c",
           "type": "string",
           "value": ""
         },
         {
           "name": "error",
+          "persistentUuid": "8c1487d4-3bea-447d-92d0-b90ec0aa165c",
           "type": "string",
           "value": ""
         },
         {
           "name": "ClickCount3",
+          "persistentUuid": "2cd5f48f-2587-4d35-b071-7cfd078deba2",
           "type": "number",
           "value": 0
         },
         {
           "name": "tspend",
+          "persistentUuid": "d400139d-d0d7-40c3-9e79-afa23e25ff36",
           "type": "number",
           "value": 0
         },
         {
           "name": "txt_0",
+          "persistentUuid": "28216931-049c-4959-b021-a42bc4018b22",
           "type": "boolean",
           "value": false
         },
         {
           "name": "WrongAttempts",
+          "persistentUuid": "3c2fcfd2-1f8d-4110-aeb4-c2883ae63d40",
           "type": "number",
           "value": 0
         }
@@ -25507,7 +25641,7 @@
                 "if (!document.getElementById(\"myIframe\")) {",
                 "  const iframe = document.createElement(\"iframe\");",
                 "  iframe.id = \"myIframe\";",
-                "  iframe.src = \"https://blocklyduino-smart-in-the-dark-sg.netlify.app/level/3\"; ",
+                "  iframe.src = \"https://blocklyduino-sitd.netlify.app/level/?level=3\"; ",
                 "  iframe.style.position = \"absolute\";",
                 "  iframe.style.width = \"100%\";",
                 "  iframe.style.height = \"100%\"; ",
@@ -25777,6 +25911,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -25821,6 +25956,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -33527,6 +33663,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -34486,6 +34623,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -35133,6 +35271,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -35220,73 +35359,89 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5843784410740941,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
         {
           "name": "txt_1",
+          "persistentUuid": "4148b1b1-f9d8-40e2-936e-a6cb7c5e2c2b",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_2",
+          "persistentUuid": "715233f3-c592-4b3b-96ac-190b350aa5d3",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_3",
+          "persistentUuid": "0444d0f0-ec59-4193-b771-eb4b8a560e2b",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_4",
+          "persistentUuid": "94b45e6b-2c7d-4187-935d-32b9df348af1",
           "type": "boolean",
           "value": false
         },
         {
           "name": "txt_5",
+          "persistentUuid": "3410f628-82c6-45a7-b2b7-082b9b714b79",
           "type": "boolean",
           "value": false
         },
         {
           "name": "BlocklyCode4",
+          "persistentUuid": "c8353b44-c49b-44e2-80a9-b567ceabc830",
           "type": "string",
           "value": ""
         },
         {
           "name": "correct",
+          "persistentUuid": "b4368184-70fc-4a0f-ba73-729bec82fabd",
           "type": "string",
-          "value": "intlight;intpir_value;voidsetup(){pinMode(2,INPUT);pinMode(6,OUTPUT);pinMode(9,OUTPUT);pinMode(12,OUTPUT);}voidloop(){light=analogRead(A0);pir_value=digitalRead(2);if(light==LOW){if(pir_value==HIGH){digitalWrite(6,HIGH);digitalWrite(9,HIGH);digitalWrite(12,HIGH);}else{digitalWrite(6,LOW);digitalWrite(9,LOW);digitalWrite(12,LOW);}}else{digitalWrite(6,LOW);digitalWrite(9,LOW);digitalWrite(12,LOW);}}"
+          "value": "intpir_value,light;voidsetup(){pinMode(2,INPUT);pinMode(6,OUTPUT);pinMode(9,OUTPUT);pinMode(12,OUTPUT);}voidloop(){light=analogRead(A0);pir_value=digitalRead(2);if(light==LOW){if(pir_value==HIGH){digitalWrite(6,HIGH);digitalWrite(9,HIGH);digitalWrite(12,HIGH);}else{digitalWrite(6,LOW);digitalWrite(9,LOW);digitalWrite(12,LOW);}}else{digitalWrite(6,LOW);digitalWrite(9,LOW);digitalWrite(12,LOW);}}"
         },
         {
           "name": "timerError",
+          "persistentUuid": "37627eb3-bd65-4044-b2de-108b9b79dd2a",
           "type": "string",
           "value": ""
         },
         {
           "name": "error",
+          "persistentUuid": "ad97b35c-b003-4f20-8842-90f8880a500b",
           "type": "string",
           "value": ""
         },
         {
           "name": "ClickCount4",
+          "persistentUuid": "edf33635-1642-4d31-a21e-0a50af9cf3e9",
           "type": "number",
           "value": 0
         },
         {
           "name": "tspend",
+          "persistentUuid": "a2354da8-6de7-413c-8052-c4b18608ee03",
           "type": "number",
           "value": 0
         },
         {
           "name": "WrongAttempts",
+          "persistentUuid": "3ca6add2-e2fa-4851-828c-f67c37920461",
           "type": "number",
           "value": 0
         }
@@ -35343,7 +35498,7 @@
                 "if (!document.getElementById(\"myIframe\")) {",
                 "  const iframe = document.createElement(\"iframe\");",
                 "  iframe.id = \"myIframe\";",
-                "  iframe.src = \"https://blocklyduino-smart-in-the-dark-sg.netlify.app/level/4\"; ",
+                "  iframe.src = \"https://blocklyduino-sitd.netlify.app/level/?level=4\"; ",
                 "  iframe.style.position = \"absolute\";",
                 "  iframe.style.width = \"100%\";",
                 "  iframe.style.height = \"100%\"; ",
@@ -35596,6 +35751,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -35640,6 +35796,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -46026,6 +46183,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -46951,6 +47109,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -47042,13 +47201,17 @@
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
+        "gridDepth": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
+        "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4789341884535245,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [],
@@ -47130,7 +47293,7 @@
           "width": 0,
           "x": 26,
           "y": 101,
-          "zOrder": 5,
+          "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47146,7 +47309,7 @@
           "width": 0,
           "x": 324,
           "y": 271,
-          "zOrder": 6,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47162,7 +47325,7 @@
           "width": 0,
           "x": 324,
           "y": 322,
-          "zOrder": 7,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47173,6 +47336,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "NewSprite",
+          "persistentUuid": "aa92b60d-1f3e-41f9-b852-d52510ce54b9",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -47449,6 +47613,7 @@
           "bold": true,
           "italic": false,
           "name": "PostQuest",
+          "persistentUuid": "b5798ae5-d7bc-4fd9-be91-fa0092e29f49",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -47492,6 +47657,7 @@
           "bold": true,
           "italic": false,
           "name": "Step3",
+          "persistentUuid": "c57760f6-bcb3-4f32-8fa9-6847f464fb85",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -47535,6 +47701,7 @@
           "bold": true,
           "italic": false,
           "name": "Step4",
+          "persistentUuid": "bca16120-7e4f-4afa-9d02-06ca3888c6d8",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -47924,6 +48091,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -47957,6 +48125,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -47991,6 +48160,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -48024,6 +48194,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -48058,6 +48229,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -48100,6 +48272,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -48147,6 +48320,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -50878,6 +51052,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -50922,6 +51097,7 @@
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -50989,6 +51165,7 @@
     {
       "author": "",
       "category": "User interface",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Panel sprite button",
       "gdevelopVersion": "",
@@ -51018,12 +51195,18 @@
       "globalVariables": [],
       "sceneVariables": [],
       "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
       "eventsBasedBehaviors": [
         {
           "description": "The finite state machine used internally by the button object.",
           "fullName": "Button finite state machine",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonFSM",
           "objectType": "",
+          "previewIconUrl": "",
           "private": true,
           "eventsFunctions": [
             {
@@ -52100,6 +52283,41 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPostEvents"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "ResetState"
+              },
+              {
+                "functionName": "IsIdle"
+              },
+              {
+                "functionName": "IsClicked"
+              },
+              {
+                "functionName": "IsHovered"
+              },
+              {
+                "functionName": "IsFocused"
+              },
+              {
+                "functionName": "IsPressed"
+              },
+              {
+                "functionName": "IsPressedOutside"
+              },
+              {
+                "functionName": "TouchId"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "true",
@@ -52113,6 +52331,28 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Hovered",
+                  "value": "Hovered"
+                },
+                {
+                  "label": "PressedInside",
+                  "value": "PressedInside"
+                },
+                {
+                  "label": "PressedOutside",
+                  "value": "PressedOutside"
+                },
+                {
+                  "label": "Validated",
+                  "value": "Validated"
+                }
+              ],
               "hidden": true,
               "name": "State"
             },
@@ -52145,7 +52385,29 @@
               "name": "Index"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ShouldCheckHovering"
+              },
+              {
+                "propertyName": "State"
+              },
+              {
+                "propertyName": "TouchId"
+              },
+              {
+                "propertyName": "TouchIsInside"
+              },
+              {
+                "propertyName": "MouseIsInside"
+              },
+              {
+                "propertyName": "Index"
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": [
@@ -52159,8 +52421,11 @@
           "defaultName": "Button",
           "description": "A button that can be customized.",
           "fullName": "Button (panel sprite)",
+          "helpPath": "",
+          "iconUrl": "",
           "isUsingLegacyInstancesRenderer": true,
           "name": "PanelSpriteButton",
+          "previewIconUrl": "",
           "objects": [
             {
               "assetStoreId": "",
@@ -52295,6 +52560,7 @@
               "ambientLightColorB": 200,
               "ambientLightColorG": 200,
               "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
               "camera3DFarPlaneDistance": 10000,
               "camera3DFieldOfView": 45,
               "camera3DNearPlaneDistance": 3,
@@ -52321,6 +52587,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -53629,6 +53896,53 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "onHotReloading"
+              },
+              {
+                "functionName": "doStepPostEvents"
+              },
+              {
+                "functionName": "IsIdle"
+              },
+              {
+                "functionName": "IsClicked"
+              },
+              {
+                "functionName": "IsHovered"
+              },
+              {
+                "functionName": "IsFocused"
+              },
+              {
+                "functionName": "IsPressed"
+              },
+              {
+                "functionName": "SetLabelText"
+              },
+              {
+                "functionName": "LabelText"
+              },
+              {
+                "functionName": "CenterWithPaddingY"
+              },
+              {
+                "functionName": "CenterLabel"
+              },
+              {
+                "functionName": "Activate"
+              },
+              {
+                "functionName": "IsActivated"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "0",
@@ -53644,6 +53958,7 @@
               "extraInformation": [
                 "Label"
               ],
+              "choices": [],
               "name": "LeftPadding"
             },
             {
@@ -53654,6 +53969,7 @@
               "extraInformation": [
                 "Label"
               ],
+              "choices": [],
               "name": "RightPadding"
             },
             {
@@ -53664,6 +53980,7 @@
               "extraInformation": [
                 "Label"
               ],
+              "choices": [],
               "name": "TopPadding"
             },
             {
@@ -53674,6 +53991,7 @@
               "extraInformation": [
                 "Label"
               ],
+              "choices": [],
               "name": "BottomPadding"
             },
             {
@@ -53683,6 +54001,34 @@
               "name": "HoveredFadeOutDuration"
             }
           ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "PressedLabelOffsetY"
+              },
+              {
+                "folderName": "Padding",
+                "children": [
+                  {
+                    "propertyName": "LeftPadding"
+                  },
+                  {
+                    "propertyName": "RightPadding"
+                  },
+                  {
+                    "propertyName": "TopPadding"
+                  },
+                  {
+                    "propertyName": "BottomPadding"
+                  }
+                ]
+              },
+              {
+                "propertyName": "HoveredFadeOutDuration"
+              }
+            ]
+          },
           "variants": []
         }
       ]
@@ -53690,6 +54036,7 @@
     {
       "author": "",
       "category": "Input",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Two choices dialog boxes",
       "gdevelopVersion": ">=5.5.222",
@@ -53722,6 +54069,9 @@
       "globalVariables": [],
       "sceneVariables": [],
       "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
       "eventsBasedBehaviors": [],
       "eventsBasedObjects": [
         {
@@ -53734,10 +54084,13 @@
           "defaultName": "",
           "description": "A dialog box showing two options.",
           "fullName": "Two choices dialog box ",
+          "helpPath": "",
+          "iconUrl": "",
           "isInnerAreaFollowingParentSize": true,
           "isTextContainer": true,
           "isUsingLegacyInstancesRenderer": false,
           "name": "TwoChoicesDialogBox",
+          "previewIconUrl": "",
           "objects": [
             {
               "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
@@ -54067,6 +54420,7 @@
               "ambientLightColorB": 200,
               "ambientLightColorG": 200,
               "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
               "camera3DFarPlaneDistance": 10000,
               "camera3DFieldOfView": 45,
               "camera3DNearPlaneDistance": 3,
@@ -54165,6 +54519,7 @@
               ]
             }
           ],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -54924,6 +55279,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "ActiveButtonById",
+              "group": "Dialog Box configuration",
               "name": "SetActiveButtonById",
               "private": true,
               "sentence": "",
@@ -55054,6 +55410,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "TextMessage",
+              "group": "Dialog Box configuration",
               "name": "SetTextMessage",
               "private": true,
               "sentence": "",
@@ -55097,6 +55454,43 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPostEvents"
+              },
+              {
+                "functionName": "onHotReloading"
+              },
+              {
+                "functionName": "IsYesClicked"
+              },
+              {
+                "functionName": "IsNoClicked"
+              },
+              {
+                "folderName": "Dialog Box configuration",
+                "children": [
+                  {
+                    "functionName": "ActiveButtonById"
+                  },
+                  {
+                    "functionName": "SetActiveButtonById"
+                  },
+                  {
+                    "functionName": "TextMessage"
+                  },
+                  {
+                    "functionName": "SetTextMessage"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "Default message. Continue?",
@@ -55135,6 +55529,26 @@
               "name": "LabelButtonID1"
             }
           ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "TextMessage"
+              },
+              {
+                "propertyName": "ActiveButtonById"
+              },
+              {
+                "propertyName": "EnableEscape"
+              },
+              {
+                "propertyName": "LabelButtonID0"
+              },
+              {
+                "propertyName": "LabelButtonID1"
+              }
+            ]
+          },
           "variants": []
         }
       ]
@@ -55142,6 +55556,7 @@
     {
       "author": "Bouh",
       "category": "Input",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Gamepads (controllers)",
       "gdevelopVersion": ">=5.5.222",
@@ -57628,12 +58043,107 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onFirstSceneLoaded"
+          },
+          {
+            "functionName": "onScenePostEvents"
+          },
+          {
+            "functionName": "AcceleratedSpeed"
+          },
+          {
+            "functionName": "TriggerPressure"
+          },
+          {
+            "functionName": "StickForce"
+          },
+          {
+            "functionName": "StickRotationValue"
+          },
+          {
+            "functionName": "StickAngle"
+          },
+          {
+            "functionName": "AxisValue"
+          },
+          {
+            "functionName": "StickForceX"
+          },
+          {
+            "functionName": "StickForceY"
+          },
+          {
+            "functionName": "C_Button_released"
+          },
+          {
+            "functionName": "LastButtonID"
+          },
+          {
+            "functionName": "C_Any_Button_pressed"
+          },
+          {
+            "functionName": "LastButtonString"
+          },
+          {
+            "functionName": "GamepadCount"
+          },
+          {
+            "functionName": "C_Button_pressed"
+          },
+          {
+            "functionName": "Deadzone"
+          },
+          {
+            "functionName": "A_Set_deadzone"
+          },
+          {
+            "functionName": "C_Axis_pushed"
+          },
+          {
+            "functionName": "ConnectedGamepadsCount"
+          },
+          {
+            "functionName": "GamepadType"
+          },
+          {
+            "functionName": "C_Controller_type"
+          },
+          {
+            "functionName": "C_Controller_X_is_connected"
+          },
+          {
+            "functionName": "A_Vibrate_controller"
+          },
+          {
+            "functionName": "A_Advanced_Vibration_Controller"
+          },
+          {
+            "functionName": "A_Change_Vibration_Magnitude"
+          },
+          {
+            "functionName": "C_any_button_released"
+          },
+          {
+            "functionName": "WeakVibrationMagnitude"
+          },
+          {
+            "functionName": "StrongVibrationMagnitude"
+          }
+        ]
+      },
       "eventsBasedBehaviors": [
         {
           "description": "Control a platformer character with a gamepad.",
           "fullName": "Platformer gamepad mapper",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "PlatformerGamepadMapper",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -58385,6 +58895,14 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -58393,6 +58911,7 @@
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
+              "choices": [],
               "name": "PlatformerCharacter"
             },
             {
@@ -58427,16 +58946,80 @@
               "type": "Choice",
               "label": "Jump button",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "A or Cross",
+                  "value": "A or Cross"
+                },
+                {
+                  "label": "B or Circle",
+                  "value": "B or Circle"
+                },
+                {
+                  "label": "X or Square",
+                  "value": "X or Square"
+                },
+                {
+                  "label": "Y or Triangle",
+                  "value": "Y or Triangle"
+                },
+                {
+                  "label": "LB or L1",
+                  "value": "LB or L1"
+                },
+                {
+                  "label": "RB or R1",
+                  "value": "RB or R1"
+                },
+                {
+                  "label": "LT or L2",
+                  "value": "LT or L2"
+                },
+                {
+                  "label": "RT or R2",
+                  "value": "RT or R2"
+                }
+              ],
               "name": "JumpButton"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "PlatformerCharacter"
+              },
+              {
+                "propertyName": "GamepadIdentifier"
+              },
+              {
+                "folderName": "Controls",
+                "children": [
+                  {
+                    "propertyName": "UseArrows"
+                  },
+                  {
+                    "propertyName": "UseLeftStick"
+                  },
+                  {
+                    "propertyName": "UseRightStick"
+                  },
+                  {
+                    "propertyName": "JumpButton"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "description": "Control a 3D physics character with a gamepad.",
           "fullName": "3D platformer gamepad mapper",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "Platformer3DGamepadMapper",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -58817,6 +59400,14 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -58825,6 +59416,7 @@
               "extraInformation": [
                 "Physics3D::PhysicsCharacter3D"
               ],
+              "choices": [],
               "name": "PhysicsCharacter3D"
             },
             {
@@ -58838,6 +59430,16 @@
               "type": "Choice",
               "label": "Walk joystick",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "Left",
+                  "value": "Left"
+                },
+                {
+                  "label": "Right",
+                  "value": "Right"
+                }
+              ],
               "name": "JoystickIdentifier"
             },
             {
@@ -58845,16 +59447,74 @@
               "type": "Choice",
               "label": "Jump button",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "A or Cross",
+                  "value": "A or Cross"
+                },
+                {
+                  "label": "B or Circle",
+                  "value": "B or Circle"
+                },
+                {
+                  "label": "X or Square",
+                  "value": "X or Square"
+                },
+                {
+                  "label": "Y or Triangle",
+                  "value": "Y or Triangle"
+                },
+                {
+                  "label": "LB or L1",
+                  "value": "LB or L1"
+                },
+                {
+                  "label": "RB or R1",
+                  "value": "RB or R1"
+                },
+                {
+                  "label": "LT or L2",
+                  "value": "LT or L2"
+                },
+                {
+                  "label": "RT or R2",
+                  "value": "RT or R2"
+                }
+              ],
               "name": "JumpButton"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "PhysicsCharacter3D"
+              },
+              {
+                "propertyName": "GamepadIdentifier"
+              },
+              {
+                "folderName": "Controls",
+                "children": [
+                  {
+                    "propertyName": "JoystickIdentifier"
+                  },
+                  {
+                    "propertyName": "JumpButton"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "description": "Control a 3D physics character with a gamepad.",
           "fullName": "3D shooter gamepad mapper",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "Shooter3DGamepadMapper",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -59224,6 +59884,14 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -59232,6 +59900,7 @@
               "extraInformation": [
                 "Physics3D::PhysicsCharacter3D"
               ],
+              "choices": [],
               "name": "PhysicsCharacter3D"
             },
             {
@@ -59245,6 +59914,16 @@
               "type": "Choice",
               "label": "Walk joystick",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "Left",
+                  "value": "Left"
+                },
+                {
+                  "label": "Right",
+                  "value": "Right"
+                }
+              ],
               "name": "WalkStick"
             },
             {
@@ -59252,6 +59931,16 @@
               "type": "Choice",
               "label": "Camera joystick",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "Left",
+                  "value": "Left"
+                },
+                {
+                  "label": "Right",
+                  "value": "Right"
+                }
+              ],
               "name": "CameraStick"
             },
             {
@@ -59259,16 +59948,77 @@
               "type": "Choice",
               "label": "Jump button",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "A or Cross",
+                  "value": "A or Cross"
+                },
+                {
+                  "label": "B or Circle",
+                  "value": "B or Circle"
+                },
+                {
+                  "label": "X or Square",
+                  "value": "X or Square"
+                },
+                {
+                  "label": "Y or Triangle",
+                  "value": "Y or Triangle"
+                },
+                {
+                  "label": "LB or L1",
+                  "value": "LB or L1"
+                },
+                {
+                  "label": "RB or R1",
+                  "value": "RB or R1"
+                },
+                {
+                  "label": "LT or L2",
+                  "value": "LT or L2"
+                },
+                {
+                  "label": "RT or R2",
+                  "value": "RT or R2"
+                }
+              ],
               "name": "JumpButton"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "PhysicsCharacter3D"
+              },
+              {
+                "propertyName": "GamepadIdentifier"
+              },
+              {
+                "folderName": "Controls",
+                "children": [
+                  {
+                    "propertyName": "WalkStick"
+                  },
+                  {
+                    "propertyName": "CameraStick"
+                  },
+                  {
+                    "propertyName": "JumpButton"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "description": "Control camera rotations with a gamepad.",
           "fullName": "First person camera gamepad mapper",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "FirstPersonGamepadMapper",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -59508,6 +60258,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HorizontalRotationSpeedMax",
+              "group": "First person camera gamepad mapper horizontal rotation configuration",
               "name": "SetHorizontalRotationSpeedMax",
               "sentence": "",
               "events": [
@@ -59588,6 +60339,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HorizontalRotationAcceleration",
+              "group": "First person camera gamepad mapper horizontal rotation configuration",
               "name": "SetHorizontalRotationAcceleration",
               "sentence": "",
               "events": [
@@ -59668,6 +60420,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HorizontalRotationDeceleration",
+              "group": "First person camera gamepad mapper horizontal rotation configuration",
               "name": "SetHorizontalRotationDeceleration",
               "sentence": "",
               "events": [
@@ -59748,6 +60501,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "VerticalRotationSpeedMax",
+              "group": "First person camera gamepad mapper vertical rotation configuration",
               "name": "SetVerticalRotationSpeedMax",
               "sentence": "",
               "events": [
@@ -59828,6 +60582,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "VerticalRotationAcceleration",
+              "group": "First person camera gamepad mapper vertical rotation configuration",
               "name": "SetVerticalRotationAcceleration",
               "sentence": "",
               "events": [
@@ -59908,6 +60663,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "VerticalRotationDeceleration",
+              "group": "First person camera gamepad mapper vertical rotation configuration",
               "name": "SetVerticalRotationDeceleration",
               "sentence": "",
               "events": [
@@ -59988,6 +60744,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "VerticalAngleMin",
+              "group": "First person camera gamepad mapper vertical rotation configuration",
               "name": "SetVerticalAngleMin",
               "sentence": "",
               "events": [
@@ -60068,6 +60825,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "VerticalAngleMax",
+              "group": "First person camera gamepad mapper vertical rotation configuration",
               "name": "SetVerticalAngleMax",
               "sentence": "",
               "events": [
@@ -60148,6 +60906,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "OffsetZ",
+              "group": "First person camera gamepad mapper position configuration",
               "name": "SetOffsetZ",
               "sentence": "",
               "events": [
@@ -60184,6 +60943,91 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "folderName": "Layers and cameras",
+                "children": [
+                  {
+                    "functionName": "LookFromObjectEyes"
+                  }
+                ]
+              },
+              {
+                "folderName": "First person camera gamepad mapper horizontal rotation configuration",
+                "children": [
+                  {
+                    "functionName": "HorizontalRotationSpeedMax"
+                  },
+                  {
+                    "functionName": "SetHorizontalRotationSpeedMax"
+                  },
+                  {
+                    "functionName": "HorizontalRotationAcceleration"
+                  },
+                  {
+                    "functionName": "SetHorizontalRotationAcceleration"
+                  },
+                  {
+                    "functionName": "HorizontalRotationDeceleration"
+                  },
+                  {
+                    "functionName": "SetHorizontalRotationDeceleration"
+                  }
+                ]
+              },
+              {
+                "folderName": "First person camera gamepad mapper vertical rotation configuration",
+                "children": [
+                  {
+                    "functionName": "VerticalRotationSpeedMax"
+                  },
+                  {
+                    "functionName": "SetVerticalRotationSpeedMax"
+                  },
+                  {
+                    "functionName": "VerticalRotationAcceleration"
+                  },
+                  {
+                    "functionName": "SetVerticalRotationAcceleration"
+                  },
+                  {
+                    "functionName": "VerticalRotationDeceleration"
+                  },
+                  {
+                    "functionName": "SetVerticalRotationDeceleration"
+                  },
+                  {
+                    "functionName": "VerticalAngleMin"
+                  },
+                  {
+                    "functionName": "SetVerticalAngleMin"
+                  },
+                  {
+                    "functionName": "VerticalAngleMax"
+                  },
+                  {
+                    "functionName": "SetVerticalAngleMax"
+                  }
+                ]
+              },
+              {
+                "folderName": "First person camera gamepad mapper position configuration",
+                "children": [
+                  {
+                    "functionName": "OffsetZ"
+                  },
+                  {
+                    "functionName": "SetOffsetZ"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -60192,6 +61036,7 @@
               "extraInformation": [
                 "Scene3D::Base3DBehavior"
               ],
+              "choices": [],
               "name": "Object3D"
             },
             {
@@ -60204,6 +61049,16 @@
               "value": "Right",
               "type": "Choice",
               "label": "Camera joystick",
+              "choices": [
+                {
+                  "label": "Left",
+                  "value": "Left"
+                },
+                {
+                  "label": "Right",
+                  "value": "Right"
+                }
+              ],
               "name": "CameraStick"
             },
             {
@@ -60291,13 +61146,77 @@
               "name": "CurrentRotationSpeedY"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Object3D"
+              },
+              {
+                "propertyName": "GamepadIdentifier"
+              },
+              {
+                "propertyName": "CameraStick"
+              },
+              {
+                "folderName": "Horizontal rotation",
+                "children": [
+                  {
+                    "propertyName": "HorizontalRotationSpeedMax"
+                  },
+                  {
+                    "propertyName": "HorizontalRotationAcceleration"
+                  },
+                  {
+                    "propertyName": "HorizontalRotationDeceleration"
+                  }
+                ]
+              },
+              {
+                "folderName": "Vertical rotation",
+                "children": [
+                  {
+                    "propertyName": "VerticalRotationSpeedMax"
+                  },
+                  {
+                    "propertyName": "VerticalRotationAcceleration"
+                  },
+                  {
+                    "propertyName": "VerticalRotationDeceleration"
+                  },
+                  {
+                    "propertyName": "VerticalAngleMin"
+                  },
+                  {
+                    "propertyName": "VerticalAngleMax"
+                  }
+                ]
+              },
+              {
+                "folderName": "Position",
+                "children": [
+                  {
+                    "propertyName": "OffsetZ"
+                  }
+                ]
+              },
+              {
+                "propertyName": "CurrentRotationSpeedZ"
+              },
+              {
+                "propertyName": "CurrentRotationSpeedY"
+              }
+            ]
+          }
         },
         {
           "description": "Control a top-down character with a gamepad.",
           "fullName": "Top-down gamepad mapper",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "TopDownGamepadMapper",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -60874,6 +61793,14 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -60882,6 +61809,7 @@
               "extraInformation": [
                 "TopDownMovementBehavior::TopDownMovementBehavior"
               ],
+              "choices": [],
               "name": "TopDownMovement"
             },
             {
@@ -60916,10 +61844,51 @@
               "type": "Choice",
               "label": "Stick mode",
               "group": "Controls",
+              "choices": [
+                {
+                  "label": "Analog",
+                  "value": "Analog"
+                },
+                {
+                  "label": "360°",
+                  "value": "360°"
+                },
+                {
+                  "label": "8 Directions",
+                  "value": "8 Directions"
+                }
+              ],
               "name": "StickMode"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "TopDownMovement"
+              },
+              {
+                "propertyName": "GamepadIdentifier"
+              },
+              {
+                "folderName": "Controls",
+                "children": [
+                  {
+                    "propertyName": "UseArrows"
+                  },
+                  {
+                    "propertyName": "UseLeftStick"
+                  },
+                  {
+                    "propertyName": "UseRightStick"
+                  },
+                  {
+                    "propertyName": "StickMode"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": []
@@ -60927,6 +61896,7 @@
     {
       "author": "",
       "category": "User interface",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Toggle switch",
       "gdevelopVersion": ">=5.5.222",
@@ -60960,12 +61930,18 @@
       "globalVariables": [],
       "sceneVariables": [],
       "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
       "eventsBasedBehaviors": [
         {
           "description": "The finite state machine used internally by the switch object.",
           "fullName": "Switch finite state machine",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "SwitchFSM",
           "objectType": "",
+          "previewIconUrl": "",
           "private": true,
           "eventsFunctions": [
             {
@@ -61599,6 +62575,32 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "IsChecked"
+              },
+              {
+                "functionName": "HasJustBeenChecked"
+              },
+              {
+                "functionName": "HasJustBeenUnchecked"
+              },
+              {
+                "functionName": "HasJustBeenToggled"
+              },
+              {
+                "functionName": "SetChecked"
+              },
+              {
+                "functionName": "ToggleChecked"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -61607,6 +62609,7 @@
               "extraInformation": [
                 "SpriteToggleSwitch::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -61629,13 +62632,32 @@
               "name": "WasChecked"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "propertyName": "IsChecked"
+              },
+              {
+                "propertyName": "PreviousIsChecked"
+              },
+              {
+                "propertyName": "WasChecked"
+              }
+            ]
+          }
         },
         {
           "description": "The finite state machine used internally by the button object.",
           "fullName": "Button finite state machine",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonFSM",
           "objectType": "",
+          "previewIconUrl": "",
           "private": true,
           "eventsFunctions": [
             {
@@ -62711,6 +63733,41 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPostEvents"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "ResetState"
+              },
+              {
+                "functionName": "IsIdle"
+              },
+              {
+                "functionName": "IsClicked"
+              },
+              {
+                "functionName": "IsHovered"
+              },
+              {
+                "functionName": "IsFocused"
+              },
+              {
+                "functionName": "IsPressed"
+              },
+              {
+                "functionName": "IsPressedOutside"
+              },
+              {
+                "functionName": "TouchId"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "true",
@@ -62724,6 +63781,28 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Hovered",
+                  "value": "Hovered"
+                },
+                {
+                  "label": "PressedInside",
+                  "value": "PressedInside"
+                },
+                {
+                  "label": "PressedOutside",
+                  "value": "PressedOutside"
+                },
+                {
+                  "label": "Validated",
+                  "value": "Validated"
+                }
+              ],
               "hidden": true,
               "name": "State"
             },
@@ -62756,7 +63835,29 @@
               "name": "Index"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ShouldCheckHovering"
+              },
+              {
+                "propertyName": "State"
+              },
+              {
+                "propertyName": "TouchId"
+              },
+              {
+                "propertyName": "TouchIsInside"
+              },
+              {
+                "propertyName": "MouseIsInside"
+              },
+              {
+                "propertyName": "Index"
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": [
@@ -62770,8 +63871,11 @@
           "defaultName": "ToggleSwitch",
           "description": "A toggle switch that users can click or touch.",
           "fullName": "Toggle switch",
+          "helpPath": "",
+          "iconUrl": "",
           "isUsingLegacyInstancesRenderer": true,
           "name": "SpriteToggleSwitch",
+          "previewIconUrl": "",
           "objects": [
             {
               "adaptCollisionMaskAutomatically": true,
@@ -62840,6 +63944,7 @@
               "ambientLightColorB": 200,
               "ambientLightColorG": 200,
               "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
               "camera3DFarPlaneDistance": 10000,
               "camera3DFieldOfView": 45,
               "camera3DNearPlaneDistance": 3,
@@ -62866,6 +63971,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -63922,6 +65028,62 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "onHotReloading"
+              },
+              {
+                "functionName": "doStepPostEvents"
+              },
+              {
+                "functionName": "IsChecked"
+              },
+              {
+                "functionName": "HasJustBeenChecked"
+              },
+              {
+                "functionName": "HasJustBeenUnchecked"
+              },
+              {
+                "functionName": "HasJustBeenToggled"
+              },
+              {
+                "functionName": "SetChecked"
+              },
+              {
+                "functionName": "ToggleChecked"
+              },
+              {
+                "functionName": "IsIdle"
+              },
+              {
+                "functionName": "IsClicked"
+              },
+              {
+                "functionName": "IsHovered"
+              },
+              {
+                "functionName": "IsFocused"
+              },
+              {
+                "functionName": "IsPressed"
+              },
+              {
+                "functionName": "UpdateStateAnimation"
+              },
+              {
+                "functionName": "Activate"
+              },
+              {
+                "functionName": "IsActivated"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "true",
@@ -63938,6 +65100,17 @@
               "name": "PreviousIsChecked"
             }
           ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "IsChecked"
+              },
+              {
+                "propertyName": "PreviousIsChecked"
+              }
+            ]
+          },
           "variants": []
         }
       ]
@@ -63945,6 +65118,7 @@
     {
       "author": "jack, DHsoftware, @Bouh",
       "category": "User interface",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Iframe",
       "gdevelopVersion": ">=5.5.222",
@@ -64122,12 +65296,24 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "Create"
+          },
+          {
+            "functionName": "Delete"
+          }
+        ]
+      },
       "eventsBasedBehaviors": [],
       "eventsBasedObjects": []
     },
     {
       "author": "Arthur Pacaud (arthuro555)",
       "category": "Network",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "WebSocket client",
       "gdevelopVersion": ">=5.5.222",
@@ -64492,12 +65678,57 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onFirstSceneLoaded"
+          },
+          {
+            "functionName": "onScenePostEvents"
+          },
+          {
+            "functionName": "IsConnecting"
+          },
+          {
+            "functionName": "IsConnected"
+          },
+          {
+            "functionName": "IsClosed"
+          },
+          {
+            "functionName": "Connect"
+          },
+          {
+            "functionName": "Disconnect"
+          },
+          {
+            "functionName": "EventReceived"
+          },
+          {
+            "functionName": "Data"
+          },
+          {
+            "functionName": "FinalizeEvent"
+          },
+          {
+            "functionName": "Send"
+          },
+          {
+            "functionName": "OnError"
+          },
+          {
+            "functionName": "LastError"
+          }
+        ]
+      },
       "eventsBasedBehaviors": [],
       "eventsBasedObjects": []
     },
     {
       "author": "VegeTato, arthuro555",
       "category": "General",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Repeat every X seconds",
       "gdevelopVersion": ">=5.5.222",
@@ -64803,12 +66034,32 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "Repeat"
+          },
+          {
+            "functionName": "Repetition"
+          },
+          {
+            "functionName": "RepeatXTimes"
+          },
+          {
+            "functionName": "DeleteTimer"
+          }
+        ]
+      },
       "eventsBasedBehaviors": [
         {
           "description": "Allows to repeat an object timer every X seconds.",
           "fullName": "Repeat every X seconds",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "RepeatTimer",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -65393,6 +66644,43 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "folderName": "Timers",
+                "children": [
+                  {
+                    "functionName": "Repeat2"
+                  },
+                  {
+                    "functionName": "Repetition"
+                  },
+                  {
+                    "functionName": "RepeatXTimes"
+                  },
+                  {
+                    "functionName": "DeleteTimer"
+                  }
+                ]
+              },
+              {
+                "functionName": "Repeat"
+              },
+              {
+                "functionName": "Pause"
+              },
+              {
+                "functionName": "Resume"
+              },
+              {
+                "functionName": "ResetLimit"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "MyTimer",
@@ -65423,7 +66711,23 @@
               "name": "Counter"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "TimerName"
+              },
+              {
+                "propertyName": "TimerLength"
+              },
+              {
+                "propertyName": "Limit"
+              },
+              {
+                "propertyName": "Counter"
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": []
@@ -65431,6 +66735,7 @@
     {
       "author": "",
       "category": "User interface",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Button states and effects",
       "gdevelopVersion": ">=5.5.222",
@@ -65471,12 +66776,18 @@
       "globalVariables": [],
       "sceneVariables": [],
       "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
       "eventsBasedBehaviors": [
         {
           "description": "Use objects as buttons.",
           "fullName": "Button states",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonFSM",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -66552,6 +67863,41 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "ResetState"
+              },
+              {
+                "functionName": "IsIdle"
+              },
+              {
+                "functionName": "IsClicked"
+              },
+              {
+                "functionName": "IsHovered"
+              },
+              {
+                "functionName": "IsFocused"
+              },
+              {
+                "functionName": "IsPressed"
+              },
+              {
+                "functionName": "IsPressedOutside"
+              },
+              {
+                "functionName": "TouchId"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "true",
@@ -66565,6 +67911,28 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Hovered",
+                  "value": "Hovered"
+                },
+                {
+                  "label": "PressedInside",
+                  "value": "PressedInside"
+                },
+                {
+                  "label": "PressedOutside",
+                  "value": "PressedOutside"
+                },
+                {
+                  "label": "Validated",
+                  "value": "Validated"
+                }
+              ],
               "hidden": true,
               "name": "State"
             },
@@ -66597,13 +67965,38 @@
               "name": "Index"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ShouldCheckHovering"
+              },
+              {
+                "propertyName": "State"
+              },
+              {
+                "propertyName": "TouchId"
+              },
+              {
+                "propertyName": "TouchIsInside"
+              },
+              {
+                "propertyName": "MouseIsInside"
+              },
+              {
+                "propertyName": "Index"
+              }
+            ]
+          }
         },
         {
           "description": "Enable effects on buttons based on their state.",
           "fullName": "Button object effects",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonObjectEffects",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -66898,6 +68291,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "IdleEffect",
+              "group": "Button object effects configuration",
               "name": "SetIdleEffect",
               "sentence": "",
               "events": [
@@ -66978,6 +68372,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FocusedEffect",
+              "group": "Button object effects configuration",
               "name": "SetFocusedEffect",
               "sentence": "",
               "events": [
@@ -67058,6 +68453,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "PressedEffect",
+              "group": "Button object effects configuration",
               "name": "SetPressedEffect",
               "sentence": "",
               "events": [
@@ -67094,6 +68490,40 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "folderName": "Button object effects configuration",
+                "children": [
+                  {
+                    "functionName": "IdleEffect"
+                  },
+                  {
+                    "functionName": "SetIdleEffect"
+                  },
+                  {
+                    "functionName": "FocusedEffect"
+                  },
+                  {
+                    "functionName": "SetFocusedEffect"
+                  },
+                  {
+                    "functionName": "PressedEffect"
+                  },
+                  {
+                    "functionName": "SetPressedEffect"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -67102,6 +68532,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -67111,6 +68542,7 @@
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
+              "choices": [],
               "name": "Effect"
             },
             {
@@ -67136,13 +68568,40 @@
               "name": "PressedEffect"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "propertyName": "Effect"
+              },
+              {
+                "folderName": "Effects",
+                "children": [
+                  {
+                    "propertyName": "IdleEffect"
+                  },
+                  {
+                    "propertyName": "FocusedEffect"
+                  },
+                  {
+                    "propertyName": "PressedEffect"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "description": "Change the animation of buttons according to their state.",
           "fullName": "Button animation",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonAnimationName",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -67346,6 +68805,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "IdleAnimationName",
+              "group": "Button animation configuration",
               "name": "SetIdleAnimationName",
               "sentence": "",
               "events": [
@@ -67426,6 +68886,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FocusedAnimationName",
+              "group": "Button animation configuration",
               "name": "SetFocusedAnimationName",
               "sentence": "",
               "events": [
@@ -67506,6 +68967,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "PressedAnimationName",
+              "group": "Button animation configuration",
               "name": "SetPressedAnimationName",
               "sentence": "",
               "events": [
@@ -67542,6 +69004,40 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "folderName": "Button animation configuration",
+                "children": [
+                  {
+                    "functionName": "IdleAnimationName"
+                  },
+                  {
+                    "functionName": "SetIdleAnimationName"
+                  },
+                  {
+                    "functionName": "FocusedAnimationName"
+                  },
+                  {
+                    "functionName": "SetFocusedAnimationName"
+                  },
+                  {
+                    "functionName": "PressedAnimationName"
+                  },
+                  {
+                    "functionName": "SetPressedAnimationName"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -67550,6 +69046,7 @@
               "extraInformation": [
                 "AnimatableCapability::AnimatableBehavior"
               ],
+              "choices": [],
               "name": "Animation"
             },
             {
@@ -67559,6 +69056,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -67584,13 +69082,40 @@
               "name": "PressedAnimationName"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Animation"
+              },
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "folderName": "Animation",
+                "children": [
+                  {
+                    "propertyName": "IdleAnimationName"
+                  },
+                  {
+                    "propertyName": "FocusedAnimationName"
+                  },
+                  {
+                    "propertyName": "PressedAnimationName"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "description": "Smoothly change an effect on buttons according to their state.",
           "fullName": "Button object effect tween",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonObjectEffectTween",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -68426,6 +69951,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "IdleValue",
+              "group": "Button effect tween configuration",
               "name": "SetIdleValue",
               "sentence": "",
               "events": [
@@ -68506,6 +70032,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FocusedValue",
+              "group": "Button effect tween configuration",
               "name": "SetFocusedValue",
               "sentence": "",
               "events": [
@@ -68586,6 +70113,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "PressedValue",
+              "group": "Button effect tween configuration",
               "name": "SetPressedValue",
               "sentence": "",
               "events": [
@@ -68667,6 +70195,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInEasing",
+              "group": "Button effect tween configuration",
               "name": "SetFadeInEasing",
               "sentence": "",
               "events": [
@@ -68748,6 +70277,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutEasing",
+              "group": "Button effect tween configuration",
               "name": "SetFadeOutEasing",
               "sentence": "",
               "events": [
@@ -68828,6 +70358,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInDuration",
+              "group": "Button effect tween configuration",
               "name": "SetFadeInDuration",
               "sentence": "",
               "events": [
@@ -68908,6 +70439,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutDuration",
+              "group": "Button effect tween configuration",
               "name": "SetFadeOutDuration",
               "sentence": "",
               "events": [
@@ -68944,6 +70476,85 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "TimeDelta"
+              },
+              {
+                "functionName": "FadeIn"
+              },
+              {
+                "functionName": "FadeOut"
+              },
+              {
+                "functionName": "PlayTween"
+              },
+              {
+                "folderName": "Button effect tween configuration",
+                "children": [
+                  {
+                    "functionName": "EffectName"
+                  },
+                  {
+                    "functionName": "EffectProperty"
+                  },
+                  {
+                    "functionName": "SetEffectProperty"
+                  },
+                  {
+                    "functionName": "IdleValue"
+                  },
+                  {
+                    "functionName": "SetIdleValue"
+                  },
+                  {
+                    "functionName": "FocusedValue"
+                  },
+                  {
+                    "functionName": "SetFocusedValue"
+                  },
+                  {
+                    "functionName": "PressedValue"
+                  },
+                  {
+                    "functionName": "SetPressedValue"
+                  },
+                  {
+                    "functionName": "FadeInEasing"
+                  },
+                  {
+                    "functionName": "SetFadeInEasing"
+                  },
+                  {
+                    "functionName": "FadeOutEasing"
+                  },
+                  {
+                    "functionName": "SetFadeOutEasing"
+                  },
+                  {
+                    "functionName": "FadeInDuration"
+                  },
+                  {
+                    "functionName": "SetFadeInDuration"
+                  },
+                  {
+                    "functionName": "FadeOutDuration"
+                  },
+                  {
+                    "functionName": "SetFadeOutDuration"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -68952,6 +70563,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -68961,6 +70573,7 @@
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
+              "choices": [],
               "name": "Effect"
             },
             {
@@ -69005,6 +70618,140 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeInEasing"
             },
             {
@@ -69012,6 +70759,140 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeOutEasing"
             },
             {
@@ -69034,6 +70915,20 @@
               "value": "Idle",
               "type": "Choice",
               "label": "",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
+              ],
               "hidden": true,
               "name": "PreviousState"
             },
@@ -69062,6 +70957,20 @@
               "value": "NoTween",
               "type": "Choice",
               "label": "",
+              "choices": [
+                {
+                  "label": "NoTween",
+                  "value": "NoTween"
+                },
+                {
+                  "label": "FadeIn",
+                  "value": "FadeIn"
+                },
+                {
+                  "label": "FadeOut",
+                  "value": "FadeOut"
+                }
+              ],
               "hidden": true,
               "name": "TweenState"
             },
@@ -69073,13 +70982,86 @@
               "name": "EffectValue"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "propertyName": "Effect"
+              },
+              {
+                "folderName": "Effect",
+                "children": [
+                  {
+                    "propertyName": "EffectName"
+                  },
+                  {
+                    "propertyName": "EffectProperty"
+                  }
+                ]
+              },
+              {
+                "folderName": "Value",
+                "children": [
+                  {
+                    "propertyName": "IdleValue"
+                  },
+                  {
+                    "propertyName": "FocusedValue"
+                  },
+                  {
+                    "propertyName": "PressedValue"
+                  }
+                ]
+              },
+              {
+                "folderName": "Speed",
+                "children": [
+                  {
+                    "propertyName": "FadeInEasing"
+                  },
+                  {
+                    "propertyName": "FadeOutEasing"
+                  },
+                  {
+                    "propertyName": "FadeInDuration"
+                  },
+                  {
+                    "propertyName": "FadeOutDuration"
+                  }
+                ]
+              },
+              {
+                "propertyName": "PreviousState"
+              },
+              {
+                "propertyName": "TweenInitialValue"
+              },
+              {
+                "propertyName": "TweenTargetedValue"
+              },
+              {
+                "propertyName": "TweenTime"
+              },
+              {
+                "propertyName": "TweenState"
+              },
+              {
+                "propertyName": "EffectValue"
+              }
+            ]
+          }
         },
         {
           "description": "Smoothly resize buttons according to their state.",
           "fullName": "Button scale tween",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonScaleTween",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -69489,6 +71471,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "IdleScale",
+              "group": "Button scale tween configuration",
               "name": "SetIdleScale",
               "sentence": "",
               "events": [
@@ -69569,6 +71552,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FocusedScale",
+              "group": "Button scale tween configuration",
               "name": "SetFocusedScale",
               "sentence": "",
               "events": [
@@ -69649,6 +71633,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "PressedScale",
+              "group": "Button scale tween configuration",
               "name": "SetPressedScale",
               "sentence": "",
               "events": [
@@ -69729,6 +71714,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInDuration",
+              "group": "Button scale tween configuration",
               "name": "SetFadeInDuration",
               "sentence": "",
               "events": [
@@ -69809,6 +71795,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutDuration",
+              "group": "Button scale tween configuration",
               "name": "SetFadeOutDuration",
               "sentence": "",
               "events": [
@@ -69890,6 +71877,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInEasing",
+              "group": "Button scale tween configuration",
               "name": "SetFadeInEasing",
               "sentence": "",
               "events": [
@@ -69971,6 +71959,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutEasing",
+              "group": "Button scale tween configuration",
               "name": "SetFadeOutEasing",
               "sentence": "",
               "events": [
@@ -70007,6 +71996,70 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "FadeIn"
+              },
+              {
+                "functionName": "FadeOut"
+              },
+              {
+                "folderName": "Button scale tween configuration",
+                "children": [
+                  {
+                    "functionName": "IdleScale"
+                  },
+                  {
+                    "functionName": "SetIdleScale"
+                  },
+                  {
+                    "functionName": "FocusedScale"
+                  },
+                  {
+                    "functionName": "SetFocusedScale"
+                  },
+                  {
+                    "functionName": "PressedScale"
+                  },
+                  {
+                    "functionName": "SetPressedScale"
+                  },
+                  {
+                    "functionName": "FadeInDuration"
+                  },
+                  {
+                    "functionName": "SetFadeInDuration"
+                  },
+                  {
+                    "functionName": "FadeOutDuration"
+                  },
+                  {
+                    "functionName": "SetFadeOutDuration"
+                  },
+                  {
+                    "functionName": "FadeInEasing"
+                  },
+                  {
+                    "functionName": "SetFadeInEasing"
+                  },
+                  {
+                    "functionName": "FadeOutEasing"
+                  },
+                  {
+                    "functionName": "SetFadeOutEasing"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -70015,6 +72068,7 @@
               "extraInformation": [
                 "ScalableCapability::ScalableBehavior"
               ],
+              "choices": [],
               "name": "Scale"
             },
             {
@@ -70024,6 +72078,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -70033,6 +72088,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "Tween"
             },
             {
@@ -70081,6 +72137,140 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeInEasing"
             },
             {
@@ -70088,23 +72278,221 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeOutEasing"
             },
             {
               "value": "Idle",
               "type": "Choice",
               "label": "",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
+              ],
               "hidden": true,
               "name": "PreviousState"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Scale"
+              },
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "propertyName": "Tween"
+              },
+              {
+                "folderName": "Size",
+                "children": [
+                  {
+                    "propertyName": "IdleScale"
+                  },
+                  {
+                    "propertyName": "FocusedScale"
+                  },
+                  {
+                    "propertyName": "PressedScale"
+                  }
+                ]
+              },
+              {
+                "folderName": "Speed",
+                "children": [
+                  {
+                    "propertyName": "FadeInDuration"
+                  },
+                  {
+                    "propertyName": "FadeOutDuration"
+                  },
+                  {
+                    "propertyName": "FadeInEasing"
+                  },
+                  {
+                    "propertyName": "FadeOutEasing"
+                  }
+                ]
+              },
+              {
+                "propertyName": "PreviousState"
+              }
+            ]
+          }
         },
         {
           "description": "Smoothly change the color tint of buttons according to their state.",
           "fullName": "Button color tint tween",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "ButtonColorTintTween",
           "objectType": "Sprite",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -70515,6 +72903,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "IdleColorTint",
+              "group": "Button color tint tween",
               "name": "SetIdleColorTint",
               "sentence": "",
               "events": [
@@ -70597,6 +72986,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FocusedColorTint",
+              "group": "Button color tint tween",
               "name": "SetFocusedColorTint",
               "sentence": "",
               "events": [
@@ -70679,6 +73069,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "PressedColorTint",
+              "group": "Button color tint tween",
               "name": "SetPressedColorTint",
               "sentence": "",
               "events": [
@@ -70761,6 +73152,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInDuration",
+              "group": "Button color tint tween",
               "name": "SetFadeInDuration",
               "sentence": "",
               "events": [
@@ -70843,6 +73235,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutDuration",
+              "group": "Button color tint tween",
               "name": "SetFadeOutDuration",
               "sentence": "",
               "events": [
@@ -70926,6 +73319,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeInEasing",
+              "group": "Button color tint tween",
               "name": "SetFadeInEasing",
               "sentence": "",
               "events": [
@@ -71009,6 +73403,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "FadeOutEasing",
+              "group": "Button color tint tween",
               "name": "SetFadeOutEasing",
               "sentence": "",
               "events": [
@@ -71046,6 +73441,70 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "FadeIn"
+              },
+              {
+                "functionName": "FadeOut"
+              },
+              {
+                "folderName": "Button color tint tween",
+                "children": [
+                  {
+                    "functionName": "IdleColorTint"
+                  },
+                  {
+                    "functionName": "SetIdleColorTint"
+                  },
+                  {
+                    "functionName": "FocusedColorTint"
+                  },
+                  {
+                    "functionName": "SetFocusedColorTint"
+                  },
+                  {
+                    "functionName": "PressedColorTint"
+                  },
+                  {
+                    "functionName": "SetPressedColorTint"
+                  },
+                  {
+                    "functionName": "FadeInDuration"
+                  },
+                  {
+                    "functionName": "SetFadeInDuration"
+                  },
+                  {
+                    "functionName": "FadeOutDuration"
+                  },
+                  {
+                    "functionName": "SetFadeOutDuration"
+                  },
+                  {
+                    "functionName": "FadeInEasing"
+                  },
+                  {
+                    "functionName": "SetFadeInEasing"
+                  },
+                  {
+                    "functionName": "FadeOutEasing"
+                  },
+                  {
+                    "functionName": "SetFadeOutEasing"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -71054,6 +73513,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -71063,6 +73523,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "Tween"
             },
             {
@@ -71108,6 +73569,140 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeInEasing"
             },
             {
@@ -71115,17 +73710,209 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
+              ],
               "name": "FadeOutEasing"
             },
             {
               "value": "Idle",
               "type": "Choice",
               "label": "",
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
+              ],
               "hidden": true,
               "name": "PreviousState"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ButtonFSM"
+              },
+              {
+                "propertyName": "Tween"
+              },
+              {
+                "folderName": "Color",
+                "children": [
+                  {
+                    "propertyName": "IdleColorTint"
+                  },
+                  {
+                    "propertyName": "FocusedColorTint"
+                  },
+                  {
+                    "propertyName": "PressedColorTint"
+                  }
+                ]
+              },
+              {
+                "folderName": "Speed",
+                "children": [
+                  {
+                    "propertyName": "FadeInDuration"
+                  },
+                  {
+                    "propertyName": "FadeOutDuration"
+                  },
+                  {
+                    "propertyName": "FadeInEasing"
+                  },
+                  {
+                    "propertyName": "FadeOutEasing"
+                  }
+                ]
+              },
+              {
+                "propertyName": "PreviousState"
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": []
@@ -71133,6 +73920,7 @@
     {
       "author": "@4ian, Entropy, VegeTato",
       "category": "Visual effect",
+      "dimension": "",
       "extensionNamespace": "",
       "fullName": "Flash object",
       "gdevelopVersion": ">=5.5.222",
@@ -71518,12 +74306,32 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "ColorTint"
+          },
+          {
+            "functionName": "IsTinted"
+          },
+          {
+            "functionName": "ToggleColorTint"
+          },
+          {
+            "functionName": "ToggleVisibility"
+          }
+        ]
+      },
       "eventsBasedBehaviors": [
         {
           "description": "Make the object flash (blink) for a period of time so it alternates between visible and invisible.",
           "fullName": "Flash visibility (blink)",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "Flash",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -71987,6 +74795,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HalfPeriodTime",
+              "group": "Flash visibility (blink) configuration",
               "name": "SetHalfPeriodTime",
               "sentence": "",
               "events": [
@@ -72023,6 +74832,37 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "Flash"
+              },
+              {
+                "functionName": "IsFlashing"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "Stop"
+              },
+              {
+                "folderName": "Flash visibility (blink) configuration",
+                "children": [
+                  {
+                    "functionName": "HalfPeriodTime"
+                  },
+                  {
+                    "functionName": "SetHalfPeriodTime"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "0.1",
@@ -72049,13 +74889,29 @@
               "name": "FlashDuration"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "HalfPeriodTime"
+              },
+              {
+                "propertyName": "IsFlashing"
+              },
+              {
+                "propertyName": "FlashDuration"
+              }
+            ]
+          }
         },
         {
           "description": "Make an object flash a color tint for a period of time.",
           "fullName": "Flash color tint",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "FlashColor",
           "objectType": "Sprite",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -72553,6 +75409,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HalfPeriodTime",
+              "group": "Flash color tint configuration",
               "name": "SetHalfPeriodTime",
               "sentence": "",
               "events": [
@@ -72590,6 +75447,37 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "Flash"
+              },
+              {
+                "functionName": "IsFlashing"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "Stop"
+              },
+              {
+                "folderName": "Flash color tint configuration",
+                "children": [
+                  {
+                    "functionName": "HalfPeriodTime"
+                  },
+                  {
+                    "functionName": "SetHalfPeriodTime"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "0.1",
@@ -72623,13 +75511,32 @@
               "name": "TintColor"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "HalfPeriodTime"
+              },
+              {
+                "propertyName": "IsFlashing"
+              },
+              {
+                "propertyName": "FlashDuration"
+              },
+              {
+                "propertyName": "TintColor"
+              }
+            ]
+          }
         },
         {
           "description": "Flash opacity smoothly (fade) in a repeating loop.",
           "fullName": "Flash opacity smothly (fade)",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "FlashOpacity",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -73177,6 +76084,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HalfPeriodTime",
+              "group": "Flash opacity smothly (fade) configuration",
               "name": "SetHalfPeriodTime",
               "sentence": "",
               "events": [
@@ -73213,6 +76121,37 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "Flash"
+              },
+              {
+                "functionName": "IsFlashing"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "Stop"
+              },
+              {
+                "folderName": "Flash opacity smothly (fade) configuration",
+                "children": [
+                  {
+                    "functionName": "HalfPeriodTime"
+                  },
+                  {
+                    "functionName": "SetHalfPeriodTime"
+                  }
+                ]
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -73221,6 +76160,7 @@
               "extraInformation": [
                 "OpacityCapability::OpacityBehavior"
               ],
+              "choices": [],
               "name": "Opacity"
             },
             {
@@ -73230,6 +76170,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "TweenBehavior"
             },
             {
@@ -73275,13 +76216,41 @@
               "name": "StartingOpacity"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Opacity"
+              },
+              {
+                "propertyName": "TweenBehavior"
+              },
+              {
+                "propertyName": "HalfPeriodTime"
+              },
+              {
+                "propertyName": "IsFlashing"
+              },
+              {
+                "propertyName": "FlashDuration"
+              },
+              {
+                "propertyName": "TargetOpacity"
+              },
+              {
+                "propertyName": "StartingOpacity"
+              }
+            ]
+          }
         },
         {
           "description": "Make the object flash an effect for a period of time.",
           "fullName": "Flash effect",
+          "helpPath": "",
+          "iconUrl": "",
           "name": "FlashEffect",
           "objectType": "",
+          "previewIconUrl": "",
           "eventsFunctions": [
             {
               "fullName": "",
@@ -73922,6 +76891,7 @@
               "fullName": "",
               "functionType": "ActionWithOperator",
               "getterName": "HalfPeriodTime",
+              "group": "Flash effect configuration",
               "name": "SetHalfPeriodTime",
               "sentence": "",
               "events": [
@@ -74080,6 +77050,40 @@
               "objectGroups": []
             }
           ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "functionName": "Flash"
+              },
+              {
+                "functionName": "IsFlashing"
+              },
+              {
+                "functionName": "onDeActivate"
+              },
+              {
+                "functionName": "Stop"
+              },
+              {
+                "folderName": "Flash effect configuration",
+                "children": [
+                  {
+                    "functionName": "HalfPeriodTime"
+                  },
+                  {
+                    "functionName": "SetHalfPeriodTime"
+                  }
+                ]
+              },
+              {
+                "functionName": "ToggleEffect"
+              }
+            ]
+          },
           "propertyDescriptors": [
             {
               "value": "",
@@ -74088,6 +77092,7 @@
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
+              "choices": [],
               "name": "Effect"
             },
             {
@@ -74122,7 +77127,26 @@
               "name": "EffectName"
             }
           ],
-          "sharedPropertyDescriptors": []
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Effect"
+              },
+              {
+                "propertyName": "HalfPeriodTime"
+              },
+              {
+                "propertyName": "IsFlashing"
+              },
+              {
+                "propertyName": "FlashDuration"
+              },
+              {
+                "propertyName": "EffectName"
+              }
+            ]
+          }
         }
       ],
       "eventsBasedObjects": []
